@@ -23,6 +23,11 @@ Setup & Usage
 > Extension inspired by David P. Cahill `Select after paste` but in raw JS.
 > You can then modify behavior: `/.vscode-oss/extensions/asap/extension.js`
 
+4th: `./mods`
+
+> Downloads 4 essential zsh plugins places in `~/.config/zsh/$plugin_name`
+> Provides working zshrc to work with
+
 Other tweaks & Demo
 ---
 
