@@ -1,6 +1,6 @@
 # DEVOops
 
-Goal is to make a dev **faster** than the next. 
+Goal is to make a dev **faster** than the next. Assumes fresh installation.
 
 Setup & Usage
 ---
