@@ -32,4 +32,4 @@ sudo tar -xzf "$TEMP_FILE" -C /opt/vscodium --strip-components=1
 rm "$TEMP_FILE"
 
 echo "VSCodium ${VERSION} installed successfully to /opt/vscodium"
-echo "You can create a symlink with: sudo ln -sf /opt/vscodium/bin/codium /usr/local/bin/code"
+ln -sf /opt/vscodium/bin/codium /usr/local/bin/code
