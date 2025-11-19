@@ -1,0 +1,42 @@
+#!/bin/bash
+# Simple Firefox distribution setup
+# Sets about:blank as new tab and downloads uBlock Origin
+set -e
+# Check if Firefox exists
+if [ ! -d "$FIREFOX_DIR" ]; then
+    echo "Firefox not found at $FIREFOX_DIR"
+    echo "Please edit FIREFOX_DIR variable in 00_header"
+    exit 1
+fi
+
+# Create distribution folder if it doesn't exist
+echo "Setting up distribution folder..."
+sudo mkdir -p "$EXTENSIONS_DIR"
+
+# Download uBlock Origin
+echo "Downloading uBlock Origin..."
+sudo wget -q -O "$EXTENSIONS_DIR/uBlock0@raymondhill.net.xpi" \
+    "https://addons.mozilla.org/firefox/downloads/latest/ublock-origin/latest.xpi"
+
+# Create policies.json
+echo "Creating policies.json..."
+sudo tee "$DIST_DIR/policies.json" > /dev/null << 'EOF'
+{
+  "policies": {
+    "ExtensionSettings": {
+      "uBlock0@raymondhill.net": {
+        "installation_mode": "force_installed",
+        "install_url": "https://addons.mozilla.org/firefox/downloads/latest/ublock-origin/latest.xpi"
+      }
+    },
+    "Homepage": {
+      "StartPage": "homepage",
+      "URL": "about:blank"
+    },
+    "NewTabPage": false
+  }
+}
+EOF
+
+echo "Done! Restart Firefox to apply changes."
+echo "Check about:policies in Firefox to verify the policies are active."

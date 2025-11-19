@@ -1,3 +1,4 @@
+# Python settins
 export VIRTUAL_ENV_DISABLE_PROMPT=1
 
 venv_prompt() {
@@ -6,6 +7,7 @@ venv_prompt() {
   echo -n "-%F{red}[%F{green}$name%F{red}]%f"   # wrap color in %{ %}
 }
 
+# Completion init
 autoload -Uz compinit && compinit
 
 # History
@@ -19,14 +21,14 @@ ZSH_AUTOSUGGEST_HIGHLIGHT_STYLE='fg=#777'
 # Load autosuggestions from ~/.config/zsh/
 ZSH_CONFIG_DIR="$HOME/.config/zsh"
 plugin_file="$ZSH_CONFIG_DIR/zsh-autosuggestions/zsh-autosuggestions.zsh"
-[ -f "$plugin_file" ] && source "$plugin_file"
+[ -f "$plugin_file" ] && . "$plugin_file"
 
 # Ensure autosuggestions start
 (( $+functions[_zsh_autosuggest_start] )) && _zsh_autosuggest_start
 
 # Source substring search
 plugin_file="$ZSH_CONFIG_DIR/zsh-history-substring-search/zsh-history-substring-search.zsh"
-[ -f "$plugin_file" ] && source "$plugin_file"
+[ -f "$plugin_file" ] && . "$plugin_file"
 
 # Search key bindings
 bindkey '^[[A' history-substring-search-up
@@ -51,9 +53,9 @@ PROMPT='%F{red}┌──[%F{cyan}%D{%H:%M}%F{red}]─[%F{default}%n%F{red}@%F{cy
 %F{red}└──╼ %F{cyan}$ %f'
 
 # Source aliases and environment
-[ -f "$HOME/.config/aliases" ] && source "$HOME/.config/aliases"
-[ -f "$HOME/.config/environment" ] && source "$HOME/.config/environment"
+[ -f "$HOME/.config/aliases" ] && . "$HOME/.config/aliases"
+[ -f "$HOME/.config/environment" ] && . "$HOME/.config/environment"
 
 # Syntax highlighting (MUST be at the end)
 plugin_file="$ZSH_CONFIG_DIR/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh"
-[ -f "$plugin_file" ] && source "$plugin_file"
+[ -f "$plugin_file" ] && . "$plugin_file"

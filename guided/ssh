@@ -1,0 +1,15 @@
+#!/bin/bash
+
+##Paste it into github or similar service
+
+#git config --global user.email "you@example.com"
+#git config --global user.name "Your Name"
+
+#git config --global user.signingkey KEY_ID
+#git config --global commit.gpgsign true
+
+#ssh-keygen -t ed25519 -C "your_email@example.com"
+
+#keychain allows you to not have to redo eval too often
+#eval $(keychain --eval --quiet id_ed25519)
+# this can be added to zshrc or similar 

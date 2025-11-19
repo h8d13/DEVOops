@@ -1,0 +1,3 @@
+#!/bin/bash
+cp ./examples/keybindings.json "$C_HOME/VSCodium/User/keybindings.json"
+

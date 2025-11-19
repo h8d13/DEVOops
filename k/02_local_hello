@@ -1,0 +1,6 @@
+#!/bin/bash
+cat > "$L_HOME/bin/hello" << 'EOF'
+#!/bin/sh
+echo "Hello $USER, It's $(date +"%H:%M:%S")."
+EOF
+chmod +x "$HOME/.local/bin/iapps"

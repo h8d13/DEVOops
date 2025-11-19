@@ -1,4 +1,9 @@
 #!/bin/bash
 export T_USER=${SUDO_USER:-$USER}
 export U_HOME="/home/$T_USER"
+export C_HOME="$U_HOME/.config/"
+export L_HOME="$U_HOME/.local/"
 
+export FIREFOX_DIR="/usr/lib/firefox"
+export DIST_DIR="$FIREFOX_DIR/distribution"
+export EXTENSIONS_DIR="$DIST_DIR/extensions"
