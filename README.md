@@ -27,6 +27,7 @@ Setup & Usage
 
 > Downloads 4 essential zsh plugins placed in `~/.config/zsh/$plugin_name`
 > Provides prompts: zshrc, bashrc, shared aliases, env file
+
 > Sets-up local bin and example script `hello`
 > Firefox profiles: Ublock and about:blank default
 
