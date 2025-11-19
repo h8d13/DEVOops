@@ -1,10 +1,10 @@
 #!/bin/bash
-
+# Run as user
 # Please make sure you opened vscodium at least once to generate the right files.
 # Also expects zsh 
 
 curl -sSL https://codeberg.org/h8d13/ZUNO/raw/branch/master/asapsh | sudo bash
 
-rm -f /home/$USER/.vscode-oss/extensions/extensions.json
+rm -f /home/$USER/.vscode-oss/extensions/extensions.json # will be regenerated on next launch with our extension inside
 
 # Then open it again. Extension should now work try to paste a block of code. 
