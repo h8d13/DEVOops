@@ -22,9 +22,10 @@ Setup & Usage
 
 > Extension heavily inspired by David P. Cahill `Select after paste` but in raw JS.
 
-Other tweaks
+Other tweaks & Demo
 ---
 
 - Auto indent after paste
 - Zsh integration to VSCodium terminal
 
+[Demo.webm](https://github.com/user-attachments/assets/72da25db-1a02-4ba3-a091-fc8dfb809380)
