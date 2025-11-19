@@ -16,23 +16,27 @@ Setup & Usage
 
 > Downloads latest release of VSCodium installs to `/opt/vscodium`
 
-> Open vscodium once to generate the `/home/user/.vscode-oss` folder.
+> Creates a symlink so you can call `code .` to open in current working directory
 
 3rd: `./setup_asap` 
 
-> Extension inspired by David P. Cahill `Select after paste` but in raw JS.
-> You can then modify behavior: `/.vscode-oss/extensions/asap/extension.js`
+> Extension inspired by David P. Cahill `Select after paste` but in raw JS. 
+> Also sets zsh default for VSCodium and hot reload `CTRL + F5`
 
 4th: `./mods`
 
-> Downloads 4 essential zsh plugins places in `~/.config/zsh/$plugin_name`
-> Provides working zshrc to work with
+> Downloads 4 essential zsh plugins placed in `~/.config/zsh/$plugin_name`
+> Provides prompts: zshrc, bashrc and shared aliases 
+> Sets-up local bin
+> Firefox profiles: Ublock and about:blank default
+
+>[!TIP]
+> Any of them can be removed by simply deleting in the `k/` [dir](./k/) 
 
 Other tweaks & Demo
 ---
 
 - Auto indent after paste
-- Zsh integration to VSCodium terminal
 
 [Demo.webm](https://github.com/user-attachments/assets/72da25db-1a02-4ba3-a091-fc8dfb809380)
 
@@ -42,3 +46,4 @@ Further tools
 - https://open-vsx.org/vscode/item?itemName=timonwong.shellcheck
 - https://open-vsx.org/vscode/item?itemName=ms-pyright.pyright
 
+See [guided](./guided/) setups for GPG and SSH. 
