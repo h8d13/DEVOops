@@ -20,7 +20,8 @@ Setup & Usage
 
 3rd: `./setup_asap` 
 
-> Extension heavily inspired by David P. Cahill `Select after paste` but in raw JS.
+> Extension inspired by David P. Cahill `Select after paste` but in raw JS.
+> You can then modify behavior: `/.vscode-oss/extensions/asap/extension.js`
 
 Other tweaks & Demo
 ---
