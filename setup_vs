@@ -32,6 +32,9 @@ sudo tar -xzf "$TEMP_FILE" -C /opt/vscodium --strip-components=1
 rm "$TEMP_FILE"
 
 echo "VSCodium ${VERSION} installed successfully to /opt/vscodium"
+
+echo "Creating symlink to /usr/local/bin/code"
 ln -sf /opt/vscodium/bin/codium /usr/local/bin/code
+echo "Can be called as code . to open in current directory."
 
 echo "Open it once before using any mods. Same for firefox profiles."
