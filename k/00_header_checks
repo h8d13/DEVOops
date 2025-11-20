@@ -4,3 +4,11 @@ if [ "$EUID" -eq 0 ]; then
     echo "It will prompt for sudo when appropriate..."
     exit 1
 fi
+if [ -d "$FIREFOX_DIR" ]; then
+    echo "Unexpected firefox path"
+    exit 1
+fi
+if [ -d "$C_HOME/VSCodium/" ]; then
+    echo "Open vscodium once" 
+    exit 1
+fi
