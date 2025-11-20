@@ -21,7 +21,9 @@ Setup & Usage
 3rd: `./setup_asap` 
 
 > Extension inspired by David P. Cahill `Select after paste` but in raw JS. 
-> Also sets zsh default for VSCodium and hot reload `CTRL + F5`
+> Also sets zsh default for VSCodium and hot reload `CTRL + F5` and auto-indent after paste + word-wrap
+
+[Demo.webm](https://github.com/user-attachments/assets/72da25db-1a02-4ba3-a091-fc8dfb809380)
 
 4th: `./mods`
 
@@ -33,13 +35,6 @@ Setup & Usage
 
 >[!NOTE]
 > Any of them can be removed by simply deleting in the `k/` [dir](./k/) 
-
-Other tweaks & Demo
----
-
-- Auto indent after paste
-
-[Demo.webm](https://github.com/user-attachments/assets/72da25db-1a02-4ba3-a091-fc8dfb809380)
 
 Further tools
 ---
