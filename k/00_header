@@ -1,4 +1,11 @@
 #!/bin/bash
+export ELEV="sudo"
+export DEPS="curl wget tar zsh bash bash-completion firefox"
+
+export PM="pacman"
+export PM_CHECK_FLAG="-Q"
+export PM_ADD_FLAGS="-Sy --noconfirm --needed"
+
 export C_HOME="$HOME/.config/"
 export L_HOME="$HOME/.local/"
 

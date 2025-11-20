@@ -17,10 +17,10 @@ wget "$DOWNLOAD_URL" -O "$TEMP_FILE"
 echo "Download complete!"
 echo "Extracting to /opt/vscodium..."
 # Remove old installation if it exists
-sudo rm -rf /opt/vscodium
+$ELEV rm -rf /opt/vscodium
 # Extract to /opt/
-sudo mkdir -p /opt/vscodium
-sudo tar -xzf "$TEMP_FILE" -C /opt/vscodium --strip-components=1
+$ELEV mkdir -p /opt/vscodium
+$ELEV tar -xzf "$TEMP_FILE" -C /opt/vscodium --strip-components=1
 # Clean up temp file
 rm "$TEMP_FILE"
 echo "VSCodium ${VERSION} installed successfully to /opt/vscodium"

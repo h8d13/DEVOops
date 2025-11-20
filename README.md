@@ -6,7 +6,7 @@ Setup & Usage
 ---
 
 >[!TIP]
-> None of these scripts require sudo.
+> None of these scripts require sudo. Will prompt when required. Also all defs are found in [header file.](./k/00_header) 
 
 1st: `./deps` 
 

@@ -1,14 +1,11 @@
 #!/bin/bash
+# shellcheck disable=SC1091
+
+. /k/00_header
+
 [ "$EUID" -eq 0 ] && echo "[-] Run me as user." && exit 1
 
-ELEV="sudo" 
-DEPS="curl wget tar zsh bash bash-completion firefox"
-# Names based on artix/arch
-PM="pacman"
-PM_CHECK_FLAG="-Q"
-PM_ADD_FLAGS="-Sy --noconfirm --needed"
-
-CHECK_DEPS () { $PM $PM_CHECK_FLAG "$DEPS" && echo "[+] All deps found."; }
-INSTALL_DEPS () { echo "[+] Installing missing deps." && $ELEV $PM "$PM_ADD_FLAGS" "$DEPS"; }
+CHECK_DEPS () { $PM "$PM_CHECK_FLAG" "$DEPS" && echo "[+] All deps found."; }
+INSTALL_DEPS () { echo "[+] Installing missing deps." && $ELEV "$PM" "$PM_ADD_FLAGS" "$DEPS"; }
 
 CHECK_DEPS || INSTALL_DEPS
