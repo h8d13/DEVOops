@@ -1,6 +1,4 @@
 #!/bin/bash
-# Run as user
-
 LATEST_RELEASE=$(curl -s https://api.github.com/repos/VSCodium/vscodium/releases/latest)
 # Extract tag name (version)
 VERSION=$(echo "$LATEST_RELEASE" | grep -oP '"tag_name": "\K[^"]+')
@@ -13,28 +11,20 @@ if [ -z "$DOWNLOAD_URL" ]; then
 fi
 echo "Download URL: $DOWNLOAD_URL"
 echo "Downloading VSCodium version: $VERSION"
-
 # Download the file to /tmp
 TEMP_FILE="/tmp/VSCodium-linux-x64-${VERSION}.tar.gz"
 wget "$DOWNLOAD_URL" -O "$TEMP_FILE"
-
 echo "Download complete!"
 echo "Extracting to /opt/vscodium..."
-
 # Remove old installation if it exists
 sudo rm -rf /opt/vscodium
-
 # Extract to /opt/
 sudo mkdir -p /opt/vscodium
 sudo tar -xzf "$TEMP_FILE" -C /opt/vscodium --strip-components=1
-
 # Clean up temp file
 rm "$TEMP_FILE"
-
 echo "VSCodium ${VERSION} installed successfully to /opt/vscodium"
-
 echo "Creating symlink to /usr/local/bin/code"
 ln -sf /opt/vscodium/bin/codium /usr/local/bin/code
 echo "Can be called as code . to open in current directory."
-
-echo "Open it once before using any mods. Same for firefox profiles."
+echo "Open it once before using any mods/asap."
