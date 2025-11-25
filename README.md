@@ -4,8 +4,8 @@ Goal is to make a dev **faster** than the next. Assumes fresh installation.
 
 Also useful and pretty:
 ```
-┌──[12:03]─[hadean_$@vasex]─[~/somewhere]─[12:02]─[git:master*]-[.venv]
-└──╼ $
+┌──[15:41]─[hadean_$@vasex]─[~/DEVOops]─[git:master]-[.venv]
+└──╼ $ 
 ```
 
 Setup & Usage
