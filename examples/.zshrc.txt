@@ -44,7 +44,7 @@ zstyle ':vcs_info:*' enable git
 zstyle ':vcs_info:*' check-for-changes true
 zstyle ':vcs_info:*' unstagedstr '%F{red}*%f'
 zstyle ':vcs_info:*' stagedstr '%F{green}+%f'
-zstyle ':vcs_info:git:*' formats '%F{red}─[%F{cyan}%D{%H:%M}%F{red}]─[%F{yellow}git:%F{green}%b%c%u%F{red}]'
+zstyle ':vcs_info:git:*' formats '%F{red}─[%F{yellow}git:%F{green}%b%c%u%F{red}]'
 zstyle ':vcs_info:git:*' actionformats '%F{red}─[%F{yellow}git:%F{green}%b%F{red}|%a%c%u%F{red}]'
 precmd() { vcs_info }
 
