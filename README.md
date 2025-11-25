@@ -22,7 +22,7 @@ Setup & Usage
 
 > Downloads latest release of VSCodium installs to `/opt/vscodium`
 
-> Creates a symlink so you can call `code .` to open in current working directory. **Open it once** to generate the vs-oss files.
+> Creates a symlink so you can call `code .` to open in current working directory. **Open it once** to generate the vs-oss files. 
 
 3rd: `./setup_asap` 
 
@@ -31,16 +31,21 @@ Setup & Usage
 
 [Demo.webm](https://github.com/user-attachments/assets/72da25db-1a02-4ba3-a091-fc8dfb809380)
 
+Open VSCodium again to check it works.
+
 4th: `./mods`
 
 > Downloads 4 essential zsh plugins placed in `~/.config/zsh/$plugin_name`
 > Provides prompts: zshrc, bashrc, shared aliases, env file
 
 > Sets-up local bin and example script `hello`
-> Firefox profiles: Ublock and about:blank default
+
 
 >[!NOTE]
-> Any of them can be removed by simply deleting in the `k/` [dir](./k/) 
+> Any of them can be removed by simply deleting in the `k/` [dir](./k/) in [examples](./examples/)
+Firefox profiles: Ublock and about:blank default
+
+Remove checks from `00_header_checks`, adapt examples to liking/according to what you removed. 
 
 Further tools
 ---

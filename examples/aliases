@@ -1,7 +1,6 @@
 # shellcheck disable=SC2148
-
 alias comms="cat ~/.config/aliases | sed 's/alias//g'"
-alias ecomms=" ~/.config/aliases"
+alias ecomms="vim ~/.config/aliases"
 alias srcall=". ~/.config/aliases"
 # Utils alias
 alias wztree="du -h / | sort -rh | head -n 30 | less"

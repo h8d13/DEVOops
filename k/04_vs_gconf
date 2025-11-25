@@ -1,0 +1,17 @@
+#!/bin/bash
+# Settings for terminal + general
+mkdir -p "$C_HOME/VSCodium/User"
+cat > "$C_HOME/VSCodium/User/settings.json" <<'EOF'
+{
+    "terminal.integrated.defaultProfile.linux": "zsh",
+    "terminal.integrated.profiles.linux": {
+        "zsh": {
+            "path": "/usr/bin/zsh",
+            "args": ["-l"]
+        }
+    },
+    "editor.autoIndentOnPaste": true,
+    "editor.wordWrap": "on",
+    "telemetry.feedback.enabled": false
+}
+EOF
