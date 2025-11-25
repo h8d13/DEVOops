@@ -5,22 +5,5 @@ $ELEV mkdir -p "$EXTENSIONS_DIR"
 echo "Downloading uBlock Origin..."
 $ELEV wget -q -O "$EXTENSIONS_DIR/uBlock0@raymondhill.net.xpi" \
     "https://addons.mozilla.org/firefox/downloads/latest/ublock-origin/latest.xpi"
-# Create policies.json
-echo "Creating policies.json..."
-$ELEV tee "$DIST_DIR/policies.json" > /dev/null << 'EOF'
-{
-  "policies": {
-    "ExtensionSettings": {
-      "uBlock0@raymondhill.net": {
-        "installation_mode": "force_installed",
-        "install_url": "https://addons.mozilla.org/firefox/downloads/latest/ublock-origin/latest.xpi"
-      }
-    },
-    "Homepage": {
-      "StartPage": "homepage",
-      "URL": "about:blank"
-    },
-    "NewTabPage": false
-  }
-}
-EOF
+
+$ELEV cp ./examples/policies.json "$DIST_DIR/policies.json"
