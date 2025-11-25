@@ -29,7 +29,7 @@ Setup & Usage
 > Extension inspired by David P. Cahill `Select after paste` but in raw JS.
 > Also sets zsh default for VSCodium and hot reload `CTRL + F5` and auto-indent after paste + word-wrap
 
-![DemoVSC.webm](./guided/demo_vsc.webm)
+![DemoVSC](guided/demo_vsc.webm)
 
 Open VSCodium again to check it works.
 
@@ -40,7 +40,7 @@ Open VSCodium again to check it works.
 
 > Sets-up local bin and example script `hello`
 
-![DemoZSH.webm](./guided/demo_zsh.webm)
+![DemoZSH](guided/demo_zsh.webm)
 
 Aliases can be edited in `~/.config/aliases` or using `ecomms` then `srcall` after adding something new (or open a new shell.)
 
