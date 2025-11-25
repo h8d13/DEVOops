@@ -31,6 +31,8 @@ Setup & Usage
 
 Open VSCodium again to check it works.
 
+[demo_vsc.webm](https://github.com/user-attachments/assets/228720cd-3f59-4045-beb3-734cd42e837b)
+
 4th: `./mods`
 
 > Downloads 4 essential zsh plugins placed in `~/.config/zsh/$plugin_name`
@@ -50,11 +52,16 @@ Env is controlled through `.config/environment`
 
 You can also pipe to these directly or use them in scripts.
 
->[!NOTE]
+[demo_zsh.webm](https://github.com/user-attachments/assets/7c87504d-8ba2-4ff9-a469-ea9ea931ea39)
+
+>[!IMPORTANT]
 > Any of them can be removed by simply deleting in the `k/` [dir](./k/) in [examples](./examples/)
 Firefox profiles: Ublock and about:blank default
 
 Remove checks from `00_header_checks`, adapt examples to liking/according to what you removed.
+
+<details>
+<summary><b>More things...</b></summary>
 
 Further tools
 ---
@@ -65,3 +72,8 @@ Further tools
 - https://open-vsx.org/vscode/item?itemName=shardulm94.trailing-spaces
 
 See [guided](./guided/) setups for GPG and SSH.
+
+
+</details>
+
+
