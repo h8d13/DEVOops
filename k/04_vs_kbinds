@@ -1,3 +1,4 @@
 #!/bin/bash
+# keybinds like hotreload
 cp ./examples/keybindings.json "$C_HOME/VSCodium/User/keybindings.json"
 
